@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jesse Yan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Disable right-click on elements with class "no-right-click"
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.no-right-click').forEach(function(el) {
+        el.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Header: Name on the left, nav on the right -->
+  <header>
+    <div class="header-content">
+      <div class="site-name">JESSE YAN</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">ABOUT</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div class="content-wrapper">
+      <div class="about-section">
+        <!-- Photo with restrictions -->
+        <img 
+          src="assets/photo.jpg" 
+          alt="Jesse Yan" 
+          class="profile-photo no-right-click" 
+          oncontextmenu="return false;" 
+          draggable="false"
+        >
+        <div class="bio-section">
+          <p>
+            Hello! I’m Jesse Yan, a Financial Mathematics graduate student at the University of Chicago (expected to graduate in June 2025) with a strong background in financial markets, risk management, and computing. I earned my BS in Actuarial Science from UIUC and have hands-on quantitative experience at firms like PwC and Neuberger Berman. Proficient in Python, C++, and various financial modeling tools, I leverage data-driven insights to solve complex financial challenges.
+          </p>
+          <p>
+            I care deeply about financial markets and quantitative research, and I take pride in developing robust analytical models grounded in rigorous statistical analysis. Currently, my focus is on crafting data-driven strategies that deliver actionable insights in options markets.
+          </p>
+          <p>
+            <strong>Contact:</strong><br>
+            <a href="mailto:jesseyan@uchicago.edu">jesseyan@uchicago.edu</a><br>
+            <a href="https://www.linkedin.com/in/jesse-yan-902966171/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/jyfinm" target="_blank">GitHub</a>
+          </p>
+          <p>
+            <a class="download-btn" href="downloads/Yan_Jesse_Resume.pdf" download>Download CV</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* Global Reset & Box Sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #eee; /* Light text */
+  }
+  
+  /* Header */
+  header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+  }
+  
+  .header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px; /* Side padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #eee;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-bottom: 2px; /* Helps highlight the active link underline */
+  }
+  
+  nav a:hover {
+    color: #1e90ff;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid #1e90ff;
+  }
+  
+  /* Main Layout */
+  main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Content Wrapper (no box) */
+  .content-wrapper {
+    padding: 20px;
+  }
+  
+  /* About Page Layout */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .profile-photo {
+    max-width: 180px;
+    border-radius: 10px;
+  }
+  
+  .bio-section {
+    flex: 1;
+    min-width: 250px;
+    line-height: 1.4; 
+    font-size: 0.95rem;
+  }
+  
+  /* Download Button */
+  .download-btn {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .download-btn:hover {
+    background-color: #187bcd;
+  }
+  
+  /* Resume Page Layout (no box) */
+  .resume-content {
+    padding: 0; /* or 20px if you want spacing inside the resume section */
+  }
+  
+  .resume-content h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .resume-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  /* Iframe Styling */
+  iframe {
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
